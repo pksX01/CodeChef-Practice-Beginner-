@@ -1,0 +1,33 @@
+#include<bits/stdc++.h>
+ using namespace std;
+  int main()
+  {
+  	int t;
+  	cin>>t;
+  	while(t--)
+  	{
+  		int n;
+  		cin>>n;
+  		string s;
+  		int count1=0,count2=0,count3=0,count4=0,count5=0;
+  		for(int i=0;i<n;i++)
+  		{
+  			cin>>s;
+  			if(s=="cakewalk")
+  				count1++;
+  			else if(s=="simple")
+  				count2++;
+  			else if(s=="easy")
+  				count3++;
+  			else if(s=="easy-medium" || s=="medium")
+  				count4++;
+  			else if(s=="medium-hard" || s=="hard")
+  				count5++;
+  		}
+  		if(count1<1 || count2<1 || count3<1 || count4<1 || count5<1)
+  			cout<<"No"<<endl;
+  		else
+  			cout<<"Yes"<<endl;
+  	}
+  	return 0;
+  }
